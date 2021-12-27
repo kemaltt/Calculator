@@ -1,7 +1,13 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
 body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: rgb(59, 59, 59);
 }
 
 .container {
@@ -14,30 +20,32 @@ body {
 }
 
 .calculator {
-    /* border: solid 1px black; */
-    border-radius: 15px;
+    border-radius: 20px;
     width: 300px;
-    height: 500px;
+    height: 550px;
     background-color: black;
 }
 
 .result {
-    height: 100px;
-    border-radius: 15px 15px 0 0;
-    background-color: black;
+    text-align: right;
+    border-bottom: rgb(73, 71, 71) solid 1px;
+    height: 110px;
+    border-radius: 25px 25px 0 0;
+    /* background-color: rgba(15, 15, 15, 0.692); */
 }
 
 .keyboard {
-    width: 300px;
-    height: 400px;
+    /* width: 300px; */
+    height: 440px;
     background-color: black;
-    border-radius: 0 0 15px 15px;
+    border-radius: 0 0 25px 25px;
 }
 
 #display {
-    text-align: right;
-    height: 10px;
+    /* text-align: right; */
+    height: 40px;
     margin-right: 20px;
+    margin-top: 10px;
     padding-top: 10px;
     font-size: 20px;
     font-weight: bold;
@@ -45,29 +53,26 @@ body {
 }
 
 #output {
-    text-align: right;
-    height: 10px;
-    margin: 10px 20px;
+    /* text-align: right; */
+    height: 70px;
+    margin-right: 20px;
+    margin-top: 10px;
     font-size: 40px;
     color: white;
 }
 
-.operator,
 .number,
 .empty {
     width: 60px;
     height: 60px;
     margin: 6px;
     border-radius: 50px;
-    font-weight: bold;
+    border: none;
+    /* font-weight: bold; */
     font-size: 20px;
-    background-color: rgb(87, 79, 79);
+    background-color: rgb(63, 63, 63);
     color: white;
     cursor: pointer;
-}
-
-.operator:hover {
-    background-color: rgb(110, 100, 100);
 }
 
 .number:hover {
@@ -78,14 +83,28 @@ body {
     background-color: rgb(110, 100, 100);
 }
 
-#gleich,
-#plus,
-#minus,
-#multiply,
-#divide {
-    background-color: rgb(241, 148, 26);
+.operator-white {
+    font-size: 20px;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    margin: 6px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.operator-orange {
+    background-color: orange;
     font-size: 30px;
-    font-weight: normal;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    margin: 6px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    color: white;
 }
 
 #zero {
@@ -99,5 +118,6 @@ body {
 .keyboard5 {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 10px;
+    padding: 7px;
+    /* margin-top: 10px; */
 }
