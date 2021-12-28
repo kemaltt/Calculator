@@ -43,9 +43,10 @@ for (let i = 0; i < operator.length; i++) {
 
 
         if (operator[i].id == "=") {
-            const newDisplay = display.innerText
-            console.log((newDisplay));
-            display.innerText = eval(newDisplay);
+            const newDisplay = (display.innerText.slice(0, -1))
+            console.log((newDisplay)); //NaN
+            output.innerText = eval(newDisplay);
+            console.log(display.innerText); //NaN
             printDisplay('')
 
         }
@@ -65,6 +66,8 @@ for (let i = 0; i < number.length; i++) {
         }
         output.innerText += number[i].innerText;
         display.innerText += number[i].innerText;
+
+        printOutput("")
 
     });
 }
