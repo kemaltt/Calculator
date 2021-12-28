@@ -67,7 +67,7 @@ for (let i = 0; i < number.length; i++) {
         output.innerText += number[i].innerText;
         display.innerText += number[i].innerText;
 
-        printOutput("")
+        // printOutput("")
 
     });
 }
