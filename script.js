@@ -42,14 +42,19 @@ for (let i = 0; i < operator.length; i++) {
         printOutput("");
 
 
-        if (operator[i].id == "=") {
-            const newDisplay = (display.innerText.slice(0, -1))
-            console.log((newDisplay)); //NaN
+        if (operator[i].innerText == "=") {
+            const newDisplay = display.innerText.slice(0, -1)
+
             output.innerText = eval(newDisplay);
-            console.log(display.innerText); //NaN
+
             printDisplay('')
+            output.innerText += number[i].innerText.slice(0, -1);
+            display.innerText += output.innerText;
+
+
 
         }
+
     });
 }
 
