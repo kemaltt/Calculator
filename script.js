@@ -37,7 +37,8 @@ for (let i = 0; i < operator.length; i++) {
         const output = document.getElementById("output");
 
 
-        display.innerText += operator[i].innerText;
+        display.innerText += output.innerText + operator[i].innerText;
+
 
         printOutput("");
 
@@ -49,7 +50,7 @@ for (let i = 0; i < operator.length; i++) {
 
             printDisplay('')
             output.innerText += number[i].innerText.slice(0, -1);
-            display.innerText += output.innerText;
+            // display.innerText += output.innerText;
 
 
 
@@ -70,7 +71,7 @@ for (let i = 0; i < number.length; i++) {
             printOutput("");;
         }
         output.innerText += number[i].innerText;
-        display.innerText += number[i].innerText;
+
 
         // printOutput("")
 
